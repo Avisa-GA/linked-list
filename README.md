@@ -7,3 +7,54 @@
 > > <li>A <em>data</em> property that stores a value.</li>
 > > <li>A <em>next</em> property, sometimes called a “pointer,” that points to the next item in the list.</li>
 > > </ul>
+```
+// each node contains two
+class ListNode {
+  constructor(data) {
+    this.data = data; // data
+    this.next = null; // pointer
+  }
+}
+
+class LinkedList {
+  constructor(head=null) {
+    this.head = head;
+  }
+
+  size() {
+    let count = 0;
+    let node = this.head;
+    while(node) {
+      count ++;
+      node = node.next
+    }
+    return count;
+  }
+
+  clear() {
+    this.head = null;
+  }
+
+  getLast() {
+    let getLast = this.head;
+    while(getLast) {
+      getLast = getLast.next;
+    }
+    return getLast;
+  }
+
+  getFirst() {
+    return this.head;
+  }
+}
+
+let node1 = new ListNode(2);
+let node2 = new ListNode(5);
+
+node1.next = node2;
+
+let list = new LinkedList(node1);
+
+console.log(list.head.next.data);
+console.log(list.size())
+```
