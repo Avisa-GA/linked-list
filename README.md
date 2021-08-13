@@ -16,11 +16,13 @@ class ListNode {
   }
 }
 
+// Notice that if the head node is not passed, the head is initialised to null.
 class LinkedList {
   constructor(head=null) {
     this.head = head;
   }
 
+ // helper methods for the linked list.
   size() {
     let count = 0;
     let node = this.head;
