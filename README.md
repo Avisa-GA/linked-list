@@ -22,7 +22,7 @@ class LinkedList {
     this.head = head;
   }
 
- // helper methods for the linked list.
+ // ********** helper methods for the linked list.
   size() {
     let count = 0;
     let node = this.head;
@@ -48,6 +48,7 @@ class LinkedList {
   getFirst() {
     return this.head;
   }
+  // ************
 }
 
 let node1 = new ListNode(2);
