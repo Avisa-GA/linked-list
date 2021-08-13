@@ -4,7 +4,6 @@
 > Linked lists are a foundational data structure used by many complex data structures.
 > > <p>The key component of a linked list is a <strong>node</strong>. Other advanced data structures use nodes, too, but in a linked list specifically, a node is a unit containing two things at the same time:</p>
 > > <ul>
-> > <li>A property that stores a value.</li>
-> > <li>A next property, sometimes called a “pointer,” that points to the next item in the list.</li>
+> > <li>A <em>data</em> property that stores a value.</li>
+> > <li>A <em>next</em> property, sometimes called a “pointer,” that points to the next item in the list.</li>
 > > </ul>
-<span style="color:red">data</span> 
