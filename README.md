@@ -7,7 +7,7 @@
 > > <li>A <em>data</em> property that stores a value.</li>
 > > <li>A <em>next</em> property, sometimes called a “pointer,” that points to the next item in the list.</li>
 > > </ul>
-```
+```ruby
 // each node contains two
 class ListNode {
   constructor(data) {
